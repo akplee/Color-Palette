@@ -14,3 +14,11 @@ function changeColor(itemNumber){
     document.getElementsByTagName("hex")[itemNumber].innerHTML = hex;
     document.getElementsByTagName("BOX")[itemNumber].style.backgroundColor = hex;
 }
+
+function changeAllColors(){
+    for (var i = 0; i < 5; i++) {
+        var hex = getHex();
+        document.getElementsByTagName("hex")[i].innerHTML = hex;
+        document.getElementsByTagName("BOX")[i].style.backgroundColor = hex;
+    }
+}
