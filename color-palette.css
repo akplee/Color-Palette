@@ -69,7 +69,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.palette .box hex:hover {
+.palette .box hex:checked {
   background-color: #fff;
   color: #333;
 }
