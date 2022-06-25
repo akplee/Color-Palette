@@ -51,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 100px;
+  gap: 30px;
   align-items: center;
   transition: 0.2s;
 }
@@ -72,6 +72,19 @@ body {
 .palette .box hex:checked {
   background-color: #fff;
   color: #333;
+}
+.palette .box lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
 }
 .palette .box button {
   text-decoration: none;
@@ -133,13 +146,14 @@ body {
     gap: 15px;
   }
   .palette .box {
+    justify-content: space-around;
+    gap: 0;
     width: 150px;
-    height: 150px;
-    gap: 40px;
+    height: 200px;
   }
   .palette .box button {
     font-size: 0.7rem;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   .instruction h2 {
